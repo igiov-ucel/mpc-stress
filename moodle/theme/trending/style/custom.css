@@ -1,0 +1,3015 @@
+/* Custom CSS
+-------------------------*/
+
+div.logo {
+	background: url([[setting:logo]]) 0 0 no-repeat;
+	display: block;
+	float: left;
+	height: 75px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+img.small-logo {
+	float: left;
+	height: 35px;
+	margin: 25px 10px;
+}
+
+@font-face {
+	font-family: 'BebasNeueBold-Regular';
+	src: url('trending/fonts/BebasNeueBold_gdi.eot');
+	src: url('trending/fonts/BebasNeueBold_gdi.eot?#iefix') format('embedded-opentype'), url('trending/fonts/BebasNeueBold_gdi.woff') format('woff'), url('trending/fonts/BebasNeueBold_gdi.ttf') format('truetype'), url('trending/fonts/BebasNeueBold_gdi.otf') format('opentype'), url('trending/fonts/BebasNeueBold_gdi.svg#BebasNeueBold-Regular') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2248;
+}
+
+@font-face {
+	font-family: 'route_159regular';
+/*	src: url('trending/fonts/route159-regular-webfont.woff2') format('woff2'), url('trending/fonts/route159-regular-webfont.woff') format('woff'), url('trending/fonts/route159-regular-webfont.ttf') format('truetype'), url('trending/fonts/route159-regular-webfont.svg#route_159regular') format('svg');*/
+    src: url('theme/trending/fonts/route159-regular-webfont.woff2') format('woff2'), url('theme/trending/fonts/route159-regular-webfont.woff') format('woff'), url('theme/trending/fonts/route159-regular-webfont.ttf') format('truetype'), url('theme/trending/fonts/route159-regular-webfont.svg#route_159regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* Global CSS
+-------------------------*/
+
+body {
+	padding-top: 0;
+	font-family: 'route_159regular';
+	font-size: 14px;
+	line-height: 26px;
+	color: grey;
+}
+
+.container-fluid {
+	max-width: 1170px;
+}
+
+a {
+	transition: 0.5s ease;
+	outline: none;
+	color: #0482D2;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: #000;
+	text-decoration: none;
+	outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #000;
+}
+
+a.logo {
+	display: inline-block;
+	margin: 1.5em 0;
+}
+
+body.pagelayout-frontpage #page-content {
+	border-top: 2px solid #ccc;
+}
+
+body#page-admin-theme-index .well {
+	background-color: #eee;
+	border-radius: 0;
+	border: 1px dashed #ccc;
+}
+
+body#page-admin-theme-index .well:first-child {
+	background-color: #3c4e8e;
+	border: 1px dashed #fff;
+}
+
+body#page-admin-theme-index .well h2 {
+	color: #fff;
+}
+
+input.form-submit,
+input#id_submitbutton,
+input#id_submitbutton2,
+.path-admin .buttons input[type="submit"],
+td.submit input,
+.btn-primary {
+	background-image: none;
+	filter: none;
+	background-color: #0482D2;
+	border: 1px solid #0482D2;
+	color: #fff;
+	text-shadow: none;
+	border-radius: 0;
+	box-shadow: none;
+	text-transform: capitalize;
+}
+
+input.form-submit:hover,
+input#id_submitbutton:hover,
+input#id_submitbutton2:hover,
+.path-admin .buttons input[type="submit"]:hover,
+td.submit input:hover,
+input.form-submit:focus,
+input#id_submitbutton:focus,
+input#id_submitbutton2:focus,
+.path-admin .buttons input[type="submit"]:focus,
+td.submit input:focus,
+input.form-submit:active,
+input#id_submitbutton:active,
+input#id_submitbutton2:active,
+.path-admin .buttons input[type="submit"]:active,
+td.submit input:active,
+input.form-submit.active,
+input#id_submitbutton.active,
+input#id_submitbutton2.active,
+.path-admin .buttons input[type="submit"].active,
+td.submit input.active,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+	background-color: #333;
+	border-color: #333;
+}
+
+a.dimmed,
+a.dimmed:link,
+a.dimmed:visited,
+a.dimmed_text,
+a.dimmed_text:link,
+a.dimmed_text:visited,
+.dimmed_text,
+.dimmed_text a,
+.dimmed_text a:link,
+.dimmed_text a:visited,
+.usersuspended,
+.usersuspended a,
+.usersuspended a:link,
+.usersuspended a:visited,
+.dimmed_category,
+.dimmed_category a {
+	color: #999 !important;
+}
+
+.btn {
+	border-radius: 0;
+}
+
+
+/* Top Header CSS 
+-------------------*/
+
+.top-header {
+	background-color: #fff;
+	color: #606264;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: normal;
+	font-weight: bold;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.top-header .pull-left ul {
+	margin: 0;
+}
+
+.top-header .pull-left ul li {
+	list-style: none;
+	float: left;
+	padding: 20px 15px;
+}
+
+.top-header .pull-left ul li.social {
+	color: #606264;
+}
+
+.top-header .pull-left ul li.social a {
+	font-size: 15px;
+	color: #606264;
+	margin-right: 10px;
+}
+
+.top-header .pull-left ul li.social a:hover,
+.top-header .pull-left ul li.social a:active,
+.top-header .pull-left ul li.social a:focus {
+	color: #0482D2;
+}
+
+.top-header .pull-left ul li.social a .fa {
+	font-weight: bold;
+}
+
+.loginsection .line {
+	float: left;
+	padding: 0;
+	border-right: 1px solid #ebebeb;
+	letter-spacing: 1px;
+}
+
+.loginsection .line:first-child {
+	border-left: 1px solid #ebebeb;
+}
+
+.loginsection .line a {
+	color: #606264;
+}
+
+
+/* Catalog CSS
+-----------------*/
+
+body.pagelayout-frontpage #coursesearch {
+	
+	display: none;
+}
+
+span.newsearch {
+	background-color: #f5f5f5;
+	border: 1px solid #d9d9d9;
+	display: inline-block;
+	margin: 10px 0;
+}
+
+span.newsearch:hover {
+	background-color: #eee;
+}
+
+span.newsearch a.catalog {
+	height: 22px;
+	color: #333;
+	text-transform: capitalize !important;
+	font-weight: normal;
+	text-align: center;
+	display: inline-block;
+	width: 90px;
+	font-size: 15px;
+	vertical-align: text-top;
+	line-height: normal;
+}
+
+span.newsearch a.catalog:hover {
+	color: #0482D2;
+}
+
+form#searchbox_demo {
+	display: inline-block;
+}
+
+form#searchbox_demo input[type="text"] {
+	background-color: #fff;
+	border-radius: 0;
+	border: none;
+	border-left: 1px solid #d9d9d9;
+	border-right: 1px solid #d9d9d9;
+	box-shadow: none;
+	height: 33px;
+	padding: 4px 12px;
+}
+
+form#searchbox_demo input[type="submit"] {
+	margin: 0;
+	background-color: transparent;
+	background-image: url([[pix:theme|search]]);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 45px;
+	height: 20px;
+	box-shadow: none;
+	border: none;
+	outline: none;
+}
+
+form#searchbox_demo input[type="submit"]:hover {
+	background-color: transparent;
+}
+
+
+/* Menu CSS
+-----------------*/
+
+.brand,
+.btn.btn-navbar {
+	display: none;
+}
+
+.navbar {
+	margin-bottom: 0;
+	text-transform: uppercase;
+	color: #606264;
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.navbar-inner {
+	background-image: none;
+	filter: none;
+	background-color: #fff;
+	border-bottom: 2px solid #eee;
+	border: none;
+	box-shadow: none;
+	padding: 0;
+}
+
+.navbar .nav>li>a.dropdown-toggle b.caret,
+.navbar .moodle-actionmenu[data-enhance] .toggle-display.textmenu .caret,
+.usermenu .moodle-actionmenu .toggle-display .caret {
+	display: none !important;
+}
+
+.navbar .brand {
+	font-size: inherit;
+	padding: 31px 20px;
+	margin: 0;
+	font-weight: bold;
+	color: #0482D2;
+	border-bottom: 4px solid #0482D2;
+}
+
+.jsenabled .usermenu .moodle-actionmenu .toggle-display.textmenu:after {
+	content: "\f107";
+	font-family: "FontAwesome";
+	display: inline-block;
+	margin-left: 8px;
+	line-height: 0;
+}
+
+.jsenabled .usermenu .moodle-actionmenu.show {
+	background-color: transparent;
+}
+
+.jsenabled .usermenu .moodle-actionmenu>.menubar {
+	padding: 11px 20px 12px;
+	display: inline-block;
+}
+
+.moodle-actionmenu[data-enhanced].show .menu,
+.dropdown-menu {
+	border-radius: 0;
+	border: 1px solid #eee;
+	border-top: 4px solid #0482D2;
+	padding: 0;
+}
+
+.dropdown-menu li {
+	border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu li:last-child {
+	border-bottom: none;
+}
+
+.jsenabled .usermenu .moodle-actionmenu.show .menu:before,
+.jsenabled .usermenu .moodle-actionmenu.show .menu:after,
+.navbar .nav>li>.dropdown-menu:before,
+.navbar .nav>li>.dropdown-menu:after {
+	border: none;
+}
+
+.jsenabled .usermenu .moodle-actionmenu.show .menu a,
+.dropdown-menu>li>a {
+	outline: none;
+	text-transform: initial;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.jsenabled .usermenu .moodle-actionmenu>.menu .filler {
+	display: none;
+}
+
+.block-control-actions {
+	background-color: #ccc;
+}
+
+.jsenabled .usermenu .moodle-actionmenu.show .menu a:hover,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-submenu:hover>a,
+.dropdown-submenu:focus>a {
+	background-color: #eee;
+	background-image: none;
+	filter: none;
+	color: #0482D2;
+}
+
+#completionprogressid{
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.loginsection .line a.login,
+.loginsection .line a.signup {
+	padding: 24px 20px;
+	display: inline-block;
+}
+
+
+/* Search CSS
+--------------------*/
+
+.search-input-wrapper {
+	background-color: transparent;
+	padding: 27px 20px 28px;
+	margin: 0;
+	border-left: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
+}
+
+.search-input-wrapper div img {
+	display: none;
+}
+
+.search-input-wrapper div[role="button"] {
+	background-image: url([[pix:theme|search]]);
+	background-repeat: no-repeat;
+	width: 24px;
+	height: 20px;
+	margin-top: 5px !important;
+}
+
+.navbar .search-input-wrapper>form {
+	margin: 0px 0 0px 25px
+}
+
+.navbar .search-input-wrapper>div {
+	margin: 0;
+}
+
+.search-input-wrapper>form>input {
+	background-color: #fff;
+	border-radius: 0;
+	border: 1px solid #ccc;
+	box-shadow: none;
+	font-style: italic;
+	width: 90%;
+}
+
+body.dir-rtl .search-input-wrapper>div {
+	margin: 10px -7px 10px 0;
+}
+
+
+/* Mssage and Notifications CSS
+----------------------------------*/
+
+.popover-region-messages,
+.popover-region-notifications {
+	background-color: transparent;
+	margin: 0;
+	border-left: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
+}
+
+.navbar .popover-region-toggle {
+	padding: 22px 20px;
+	border: none;
+	outline: none;
+}
+
+.navbar .popover-region-container {
+	top: 100%;
+}
+
+.popover-region-header-text {
+	line-height: 40px;
+	margin: 0 10px;
+}
+
+.popover-region-header-container {
+	height: 40px;
+	line-height: 40px;
+}
+
+.navbar .popover-region-toggle img {
+	width: 18px;
+	height: 18px;
+}
+
+.popover-region-content-container {
+	height: 85%;
+}
+
+
+/* Custom Categories CSS
+--------------------------*/
+
+#frontpage-category-names h2,
+#site-news-forum h2,
+.tutors h1 {
+	text-align: center;
+	color: #000;
+	font-size: 2em;
+	line-height: normal;
+	margin: 0 !important;
+	text-transform: capitalize;
+}
+
+#frontpage-category-names p.tagline,
+#site-news-forum p.tagline,
+.tutors p.tagline {
+	color: #000;
+	margin-top: 5px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.customcategories {
+	margin-top: 4em;
+}
+
+.customcategories #frontpage-category-names .category .subcategories,
+.customcategories .collapsible-actions {
+	display: none !important;
+}
+
+.customcategories #frontpage-category-names .category.span3 {
+	margin: 10px !important;
+}
+
+.customcategories #frontpage-category-names .categoryimage img {
+	width: 100%;
+}
+
+.customcategories #frontpage-category-names .course_category_tree {
+	margin-top: 2em;
+}
+
+.customcategories #frontpage-category-names .course_category_tree .category>.info>h3.categoryname {
+	background-image: none;
+	padding: 15px;
+	font-size: 1.5em;
+	line-height: normal;
+	font-weight: normal;
+	color: #000;
+	margin: 0;
+}
+
+.customcategories #frontpage-category-names .course_category_tree .category .categorydescription {
+	padding: 15px;
+	padding-top: 0;
+	color: #727272;
+}
+
+.customcategories #frontpage-category-names .course_category_tree .category>.info>h3.categoryname a {
+	color: #000;
+}
+
+.customcategories #frontpage-category-names .course_category_tree .category .numberofcourse {
+	font-size: inherit;
+}
+
+.morecontent span {
+	display: none;
+}
+
+.morelink {
+	outline: none;
+	color: #333;
+}
+
+.morelink:hover,
+.morelink:focus {
+	outline: none;
+}
+
+.customcategories .owl-pagination {
+	display: none;
+}
+
+.customcategories #owl-demo1 {
+	margin-top: 1em;
+}
+
+.customcategories #owl-demo1 .owl-controls .owl-buttons div {
+	display: inline-block;
+	color: transparent;
+	font-size: 0px;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border-radius: 0;
+	opacity: inherit;
+	position: absolute;
+}
+
+.customcategories #owl-demo1 .owl-controls .owl-buttons div.owl-prev {
+	background-image: url([[pix:theme|prev]]);
+	background-position: left top;
+	left: 0;
+}
+
+.customcategories #owl-demo1 .owl-controls .owl-buttons div.owl-next {
+	background-image: url([[pix:theme|next]]);
+	background-position: right top;
+	right: 0;
+}
+
+body.dir-rtl .customcategories #owl-demo1 .owl-controls .owl-buttons div.owl-next {
+	left: 47px;
+}
+
+.customcategories #owl-demo1 .owl-controls {
+	position: absolute;
+	top: -45px;
+	width: 80px;
+	right: 10px;
+	margin: 0;
+}
+
+.customcategories #owl-demo1 .trendingcats {
+	margin: 10px;
+	border: 1px solid #eee;
+	min-height: 400px;
+	position: relative;
+    padding-bottom: 15px;
+}
+
+.customcategories span.course-num {
+	padding: 0 15px;
+    color: #454545;
+    font-weight: bold;
+}
+
+.customcategories a.seeall.btn {
+	float: right;
+	background-image: none;
+	filter: none;
+	background-color: #727272;
+	padding: 10px 20px;
+	color: #fff;
+	margin: 10px 8px;
+	font-size: 14px;
+	text-shadow: none;
+	border: none;
+	border-radius: 0;
+}
+
+.customcategories a.seeall.btn:hover {
+	background-color: #4c4c4c;
+}
+
+
+/* Defaultcategories CSS
+---------------------------*/
+
+.defaultcategories {
+	margin-top: 4em;
+}
+
+.defaultcategories .course_category_tree .category>.info {
+	box-shadow: none;
+}
+
+.defaultcategories .course_category_tree .category>.info>.categoryname {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+
+/* All Category Page CSS
+-----------------------------*/
+
+.course_category_tree .category>.info {
+	box-shadow: none;
+	background-color: transparent;
+	border: none;
+}
+
+.course_category_tree .category>.info>.categoryname {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.courses .coursebox.collapsed {
+	border: none;
+	display: block;
+}
+
+body.pagelayout-coursecategory .courseimage {
+	width: 100px;
+	height: 100px;
+}
+
+body.pagelayout-coursecategory .categoryimage,
+body.pagelayout-coursecategory .categorydescription {
+	display: none;
+}
+
+
+/* Category Page CSS
+-------------------------*/
+
+body#page-course-index-category {
+	background-color: #ebebeb;
+}
+
+body#page-course-index-category .generalbox.info {
+	background-color: #fff;
+	border: 1px solid #dcdcdc;
+	padding: 15px 10px;
+	border-radius: 0;
+}
+
+body#page-course-index-category .coursebox {
+	background-color: #fff;
+	border: 1px solid #dcdcdc;
+	padding: 20px;
+	border-radius: 0;
+}
+
+body#page-course-index-category .coursebox .panel-image {
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+
+body#page-course-index-category .coursebox .panel-image img {
+	width: 100%;
+	height: 100%;
+}
+
+body#page-course-index-category .coursebox .content {
+	clear: none;
+	margin-left: 120px;
+}
+
+body#page-course-index-category .coursebox .info span.coursename {
+	font-size: 1.2em;
+}
+
+body#page-course-index-category .coursebox .info span.coursename a {
+	color: #333;
+}
+
+body#page-course-index-category .visitlink a {
+	background-color: #727272;
+	color: #fff;
+	border-radius: 0;
+	padding: 3px 15px;
+}
+
+body#page-course-index-category .visitlink a:hover {
+	background-color: #4c4c4c;
+}
+
+body#page-course-index-category .categorypicker,
+body.pagelayout-coursecategory #coursesearch {
+	text-align: center;
+	margin: 10px 0 20px;
+	background-color: #3c4e8e;
+	padding: 15px 10px;
+	color: #fff;
+}
+
+body#page-course-index-category .categorypicker select,
+body.pagelayout-coursecategory #coursesearch input[type="text"],
+body.pagelayout-coursecategory #coursesearch input[type="submit"] {
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+
+/* Course Page CSS
+--------------------*/
+
+.course-content ul li.section.main {
+	border: 1px solid #e1e1e1;
+	margin-bottom: 20px;
+}
+
+.course-content ul.topics li.section .content,
+.course-content ul.weeks li.section .content {
+	margin: 0;
+}
+
+.course-content ul li.section.main h3.sectionname {
+	margin: 0;
+	color: #8a8a8a;
+	text-transform: uppercase;
+	font-size: 14px;
+	background-color: #f6f6f6;
+	border-bottom: 1px solid #e1e1e1;
+	letter-spacing: 1px;
+}
+
+.course-content ul li.section.main h3.sectionname a {
+	color: #8a8a8a;
+}
+
+.path-course-view .completionprogress {
+	float: none;
+	margin-bottom: 20px;
+}
+
+
+/* Popular Courses CSS
+---------------------------*/
+
+#allcourses {
+	background-image: url([[setting:allcoursesbg]]);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin-top: 4em;
+	padding: 4em 0;
+}
+
+.ourcourses h2.allcourses {
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	color: #fff;
+	font-size: 2.5em;
+	line-height: normal;
+	margin: 0 !important;
+}
+
+.ourcourses p.tagline {
+	color: #fff;
+	margin-top: 5px;
+	font-size: 16px;
+	text-align: center;
+}
+
+table.wrapper tr td span.tst-wrap {
+	display: block;
+}
+
+.course-section {
+	float: left;
+}
+
+.frontpage-course-list-all,
+.frontpage-course-list-enrolled {
+	margin-top: 3em;
+}
+
+.frontpage-course-list-all .coursebox,
+.frontpage-course-list-enrolled .coursebox {
+	border: none;
+	padding: 0;
+	margin: 10px;
+}
+
+.frontpage-course-list-all .coursebox.tst,
+.frontpage-course-list-enrolled .coursebox.tst {
+	width: 100% !important;
+}
+
+.frontpage-course-list-all .coursebox .panel-image,
+#enrolledcourses .coursebox .panel-image,
+.customcategories #frontpage-category-names .categoryimage {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	cursor: default;
+}
+
+.frontpage-course-list-all .coursebox .panel-image img,
+.frontpage-course-list-enrolled .coursebox .panel-image img,
+.customcategories #frontpage-category-names .categoryimage img {
+	display: block;
+	position: relative;
+	-webkit-transition: all .4s linear;
+	transition: all .4s linear;
+	width: 100%;
+	margin: 0;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.frontpage-course-list-all .coursebox .panel-image img:hover,
+.frontpage-course-list-enrolled .coursebox .panel-image img:hover,
+.customcategories #frontpage-category-names .categoryimage img:hover {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	/* For IE8 and earlier */
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.frontpage-course-list-all .coursebox,
+.frontpage-course-list-enrolled .coursebox {
+	background-color: #fff;
+	border: none;
+	border-radius: 0;
+}
+
+.frontpage-course-list-all .coursebox:hover {
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.frontpage-course-list-all .coursebox .content {
+	padding: 20px;
+}
+
+.frontpage-course-list-enrolled .coursebox .content {
+	padding: 10px 20px;
+}
+
+.frontpage-course-list-all .coursebox .content .info,
+.frontpage-course-list-enrolled .coursebox .content .info {
+	margin: 10px 0;
+}
+
+.frontpage-course-list-all .coursebox .content .info span.coursename {
+	font-size: 18px;
+	line-height: normal;
+	font-weight: bold;
+}
+
+.frontpage-course-list-all .coursebox .content .coursename a {
+	color: #373737;
+}
+
+.frontpage-course-list-all .coursebox .content .coursename a:hover {
+	color: #727272;
+}
+
+.courses .coursebox.even {
+	background-color: #fff;
+}
+
+.coursebox .content ul.teachers {
+	float: none !important;
+	clear: both !important;
+	width: 100% !important;
+	margin: 10px 0 !important;
+	font-size: 12px;
+	color: #727272;
+}
+
+.coursebox .content .teachers li {
+	margin-bottom: 5px;
+}
+
+.coursebox .content ul.teachers a {
+	color: #727272;
+}
+
+.coursebox .content ul.teachers img.userpicture {
+	width: 20px;
+	height: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.coursebox.collapsed>.content {
+    
+    display: block;
+}
+
+.visitlink {
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+
+.visitlink a {
+	background-color: #ffd740;
+	padding: 0px 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	display: inline-block;
+	color: #fff;
+	font-size: 12px;
+}
+
+#owl-demo .owl-item:nth-child(odd) .visitlink a,
+#enrolledcourses .courses .coursebox.odd .visitlink a {
+	background-color: #0482D2;
+}
+
+.paging.paging-morelink {
+	color: #fff;
+	clear: both;
+	text-align: right !important;
+	padding-top: 10px;
+}
+
+.paging.paging-morelink a {
+	color: #ffaa30;
+}
+
+.paging.paging-morelink a:hover {
+	color: #fff;
+}
+
+.paging.paging-morelink .fa {
+	vertical-align: text-bottom;
+}
+
+#owl-demo .owl-pagination {
+	display: none;
+}
+
+#owl-demo {
+	margin-top: 1em;
+}
+
+#owl-demo .owl-controls .owl-buttons {
+	text-align: center;
+}
+
+#owl-demo .owl-controls .owl-buttons div {
+	display: inline-block;
+	color: #fff;
+	font-size: 13px;
+	line-height: normal;
+	text-transform: uppercase;
+	padding: 5px 20px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border-radius: 0;
+	opacity: inherit;
+}
+
+#owl-demo .owl-controls .owl-buttons div.owl-prev {
+	border: 2px solid #fff;
+	-webkit-border-top-left-radius: 25px;
+	-webkit-border-bottom-left-radius: 25px;
+	-moz-border-radius-topleft: 25px;
+	-moz-border-radius-bottomleft: 25px;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	margin: 0 5px;
+	transition: 0.5s ease;
+}
+
+#owl-demo .owl-controls .owl-buttons div.owl-prev:hover,
+#owl-demo .owl-controls .owl-buttons div.owl-next:hover {
+	border-color: #ffaa30;
+	color: #ffaa30;
+}
+
+#owl-demo .owl-controls .owl-buttons div.owl-next {
+	border: 2px solid #fff;
+	-webkit-border-top-right-radius: 25px;
+	-webkit-border-bottom-right-radius: 25px;
+	-moz-border-radius-topright: 25px;
+	-moz-border-radius-bottomright: 25px;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	margin: 0 5px;
+	transition: 0.5s ease;
+}
+
+#owl-demo .owl-controls {
+	margin: 0;
+	margin-top: 2em;
+}
+
+
+/* Site News CSS
+------------------*/
+
+#news {
+	padding: 4em 0;
+}
+
+#site-news-forum {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.forumpost {
+	background-color: transparent;
+	border-radius: 0;
+	box-shadow: none;
+	border: 5px solid #0482D2;
+	position: relative;
+	padding: 25px;
+	padding-left: 40px;
+	margin: 40px 0;
+	clear: both;
+}
+
+.forumpost:before {
+	content: "\f10d";
+	font-family: 'FontAwesome';
+	font-size: 50px;
+	top: 40%;
+	background-color: #fff;
+	line-height: normal;
+	position: absolute;
+	left: -25px;
+	top: 40%;
+	color: #0482D2;
+}
+
+.forumpost:nth-child(even) {
+	border: 5px solid #ffaa30;
+}
+
+.forumpost:nth-child(even):before {
+	content: "\f10e";
+	font-family: 'FontAwesome';
+	right: -27px;
+	left: auto;
+	color: #ffaa30;
+	font-size: 50px;
+	background-color: #fff;
+}
+
+.forumpost .row .left {
+	width: 70px;
+}
+
+.forumpost .header .left {
+	width: 60px;
+}
+
+.forumpost .picture img.userpicture {
+	width: 90%;
+	height: auto;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.forumpost .header .topic {
+	margin-left: 70px;
+}
+
+.forumpost .subject {
+	font-weight: bold;
+	font-size: 15px;
+	color: #000;
+}
+
+.forumpost .subject:before {
+	content: "Subject : ";
+	color: #000;
+}
+
+.forumpost .author a {
+	display: block;
+	color: #727272;
+}
+
+.forumpost .author span.none {
+	display: none;
+}
+
+.forumpost .author a:before {
+	content: "Name : ";
+	color: #000;
+}
+
+.forumpost .author .content {
+	margin-left: 0;
+	color: #727272;
+}
+
+.forumpost .author .content:before {
+	content: "Date & Time: ";
+	color: #000;
+}
+
+.forumpost .row .options a {
+	color: #727272;
+}
+
+.forumpost .row .options a:hover {
+	color: #000;
+}
+
+#page-site-index .subscribelink {
+	display: inline-grid;
+	float: right;
+	margin: 1.2em 0 15px 0 !important;
+}
+
+#page-site-index .subscribelink a {
+	border: 2px solid #727272;
+	padding: 11px 15px;
+	color: #727272;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: normal;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+#page-site-index .singlebutton div {
+	margin: 0;
+}
+
+#page-site-index .forumaddnew {
+	display: inline-block;
+	float: right;
+	margin-right: 10px;
+}
+
+#page-site-index .forumaddnew input[type="submit"] {
+	background-color: transparent;
+	background-image: none;
+	filter: none;
+	border-radius: 0;
+	border: 2px solid #727272;
+	padding: 11px 15px;
+	color: #727272;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: normal;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	box-shadow: none;
+	margin: 1.5em 0 15px 0 !important;
+}
+
+#page-site-index .subscribelink a:hover,
+#page-site-index .forumaddnew input[type="submit"]:hover {
+	border-color: #111;
+	color: #111;
+}
+
+
+/* Forumheaderlist CSS
+-----------------------------*/
+
+.forumheaderlist {
+	border: 1px solid #eee !important;
+}
+
+.forumheaderlist thead {
+	background-color: #eee;
+	margin-bottom: 20px;
+}
+
+.path-mod-forum .forumheaderlist thead .header {
+	padding: 20px;
+	text-align: left;
+}
+
+.forumheaderlist td {
+	padding: 20px !important;
+}
+
+.forumheaderlist tbody tr.discussion:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.forumheaderlist tbody tr.discussion:nth-child(odd) {
+	background-color: #fff;
+}
+
+/* Internalbanner CSS
+-------------------------*/
+
+.internalbanner {
+	background-image: url([[setting:internalbannerimage]]);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 200px;
+}
+
+.internalbanner .container-fluid {
+	padding-top: 50px;
+	text-align: center;
+}
+
+
+/* Page-Navbar CSS
+----------------------*/
+
+#page-navbar {
+	background-color: #dcdcdc;
+	border: none;
+	font-size: 14px;
+	padding: 5px 0;
+	margin-bottom: 2em;
+}
+
+.breadcrumb {
+	background-color: transparent;
+	filter: none;
+	border: none;
+	border-radius: 0;
+	padding: 11px 15px;
+	padding-left: 0;
+}
+
+.breadcrumb a {
+	color: #1a1a1a;
+	text-shadow: none;
+}
+
+.breadcrumb-nav {
+	margin-bottom: 0;
+}
+
+#page-navbar input[type="submit"] {
+	margin-bottom: 0;
+}
+
+.breadcrumb>li {
+	color: #1a1a1a;
+	text-shadow: none;
+}
+
+.breadcrumb>li>.divider {
+	color: transparent;
+	text-shadow: none;
+	background-image: url([[pix:theme|arrow1]]);
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding-right: 20px;
+}
+
+.breadcrumb-button {
+	margin-bottom: 4px;
+}
+
+.breadcrumb-button .singlebutton div {
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+
+.breadcrumb-button .singlebutton form{
+    margin-top: 0;
+}
+
+/* Sticky Icons CSS
+--------------------*/
+
+#stickyicons {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 46px;
+	position: fixed;
+	right: 0;
+	top: 50%;
+	z-index: 10
+}
+body.dir-rtl #stickyicons{
+    right: 0 !important;
+    margin-top: 30px !important;
+}
+#stickyicons li {
+	position: relative;
+	display: block;
+	width: 46px;
+	height: 46px
+}
+
+#stickyicons li a {
+	color: #fff;
+	display: block;
+	height: 46px
+}
+
+#stickyicons li a .stickynavicon {
+	display: block;
+	position: relative;
+	z-index: 2;
+	margin: 0;
+	padding: 0;
+	width: 46px;
+	height: 46px;
+	text-align: center;
+	line-height: 46px;
+	background-color: #000;
+	border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+	-webkit-transition: all 0.15s ease-in-out;
+	-moz-transition: all 0.15s ease-in-out;
+	-ms-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out
+}
+
+#stickyicons li a .stickynavtext {
+	display: inline-block;
+	height: 46px;
+	line-height: 46px;
+	position: absolute;
+	/* right: 500px; */
+	top: 0;
+	background-color: rgba(72, 72, 72, 0.9);
+	white-space: nowrap;
+	padding: 0 12px;
+}
+
+#stickyicons li a:hover .stickynavicon,
+#stickyicons li a:focus .stickynavicon {
+	background-color: #484848;
+	border-bottom-color: transparent
+}
+
+#stickyicons li:last-child a .stickynavicon {
+	border-bottom: 0
+}
+
+
+/* block-section CSS
+--------------------------*/
+
+a.link-buy {
+	box-sizing: border-box;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	font-size: 13px;
+	line-height: 1.5;
+	box-shadow: 0 2px 0 #6f9a37;
+	width: 100%;
+	border: 0;
+	border-radius: 4px;
+	font-weight: 700;
+	max-width: 240px;
+	text-decoration: none !important;
+	color: #fff !important;
+	background-color: #82b440;
+	padding: 10px;
+	min-width: 200px;
+	display: block;
+	margin: 0 auto;
+}
+
+a.link-buy:hover {
+	background-color: #7aa93c;
+}
+
+a.link-buy .fa {
+	margin-right: 5px;
+}
+
+.slideblock-con {
+	margin: 2em auto;
+}
+
+.block-section nav.slideblock {
+	position: fixed;
+	top: 0;
+	left: -1px;
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	width: 295px;
+	margin: 0 0px 0 -300px;
+	-moz-transition: all 200ms ease-in;
+	-webkit-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+	z-index: 9999;
+	height: 100%;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+	overflow-y: scroll;
+}
+
+.block-section nav.slideblock h4.links {
+	color: #111;
+	margin-top: 20px;
+	margin-bottom: 0;
+	padding: 6.5px 15px;
+	z-index: 73;
+	text-align: center;
+}
+
+.block-section nav.slideblock p.links-con {
+	font-size: 13px;
+	line-height: normal;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.block-section label.slideblocklabel {
+	display: block;
+	background-color: #202020;
+	width: 42px;
+	height: 42px;
+	padding: 0;
+	position: fixed;
+	top: 150px;
+	left: 0px;
+	-moz-transition: all 200ms ease-in;
+	-webkit-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+	z-index: 70;
+	cursor: pointer;
+	margin-bottom: 0;
+	z-index: 7000;
+	text-align: center;
+}
+
+.block-section label.slideblocklabel .fa {
+	font-size: 18px;
+	color: #fff;
+	line-height: normal;
+	margin-top: 12px;
+}
+
+div[data-flexitour="step-background"] {
+	position: absolute;
+	background: inherit;
+	z-index: -1 !important;
+}
+
+.block-section input[type="checkbox"] {
+	display: none;
+}
+
+.block-section input[type="checkbox"]:checked~nav {
+	margin: 0;
+}
+
+.block-section input[type="checkbox"]:checked~label {
+	left: 294px;
+}
+
+.block-section input[type="checkbox"]:checked~section {
+	-webkit-transform: translate3d(300px, 0, 0);
+	-moz-transform: translate3d(300px, 0, 0);
+	-o-transform: translate3d(300px, 0, 0);
+	transform: translate3d(300px, 0, 0);
+}
+
+.block-section .block {
+	padding-top: 0 !important;
+}
+
+.block-section #block-region-side-pre,
+.block-section #block-region-side-post {
+	margin: 0 auto !important;
+	width: 100% !important;
+	float: none !important;
+}
+
+.block-section #block-region-side-pre .block,
+.block-section #block-region-side-post .block {
+	padding: 15px;
+}
+
+a.link-buy {
+	box-sizing: border-box;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	font-size: 13px;
+	line-height: 1.5;
+	box-shadow: 0 2px 0 #6f9a37;
+	width: 100%;
+	border: 0;
+	border-radius: 4px;
+	font-weight: 700;
+	max-width: 240px;
+	text-decoration: none !important;
+	color: #fff !important;
+	background-color: #82b440;
+	padding: 10px;
+	min-width: 200px;
+	display: block;
+	margin: 0 auto;
+}
+
+a.link-buy:hover {
+	background-color: #7aa93c;
+}
+
+a.link-buy .fa {
+	margin-right: 5px;
+}
+
+.slideblock-con {
+	margin: 2em auto;
+}
+
+.block {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	border-radius: 0;
+}
+
+.block .header {
+	padding: 0;
+	background-color: #0482D2;
+}
+
+.block .header h2 {
+	color: #fff;
+	font-size: 1.1em;
+	text-transform: capitalize;
+	font-weight: normal;
+	padding: 11px 0px;
+	text-shadow: none;
+}
+
+.block .content {
+	background-color: transparent;
+	font-size: 14px;
+	padding: 10px;
+}
+
+.editing .block .header .commands {
+	background-color: #ccc;
+}
+
+.block .header .block_action {
+	padding: 6px 10px;
+}
+
+.block a {
+	color: #000;
+}
+
+.block_calendar_month .content {
+	padding: 0;
+}
+
+.block_calendar_month caption {
+	padding: 25px 0;
+	background-color: #3d4c8d;
+}
+
+.block .minicalendar {
+	max-width: inherit;
+}
+
+.block_calendar_month .calendar-controls .previous {
+	color: #fff;
+	font-size: 0;
+	background-image: url([[pix:theme|arrow-left]]);
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.block_calendar_month .calendar-controls .next {
+	color: #fff;
+	font-size: 0;
+	background-image: url([[pix:theme|arrow-right]]);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.block_calendar_month .calendar-controls .current a {
+	font-size: 1.8em;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.block_calendar_month tbody {
+	background-color: #f5f5f5;
+}
+
+.block .minicalendar th,
+.block .minicalendar td {
+	padding: 5px 2px;
+}
+
+.block .minicalendar th {
+	padding-top: 1.2em !important;
+}
+
+.block .minicalendar th abbr[title] {
+	border-bottom: none;
+	text-decoration: none;
+	color: #000;
+	font-size: 10px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.calendar_event_course,
+.block .calendar-event-panel .yui3-overlay-content {
+	background-color: #000;
+	color: #fff;
+}
+
+.calendar_event_course a,
+.block .calendar-event-panel .yui3-overlay-content a {
+	color: #fff;
+}
+
+.moodle-actionmenu[data-enhanced].show .menu a:hover {
+	background-color: #0482D2;
+	border-radius: 0;
+}
+
+.moodle-actionmenu[data-enhanced].show .menu img {
+	vertical-align: top;
+}
+
+
+/* Mycourses
+-------------------*/
+
+#enrolledcourses {
+	background-image: url([[setting:enrolledcoursesbg]]);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 4em 0;
+	border-top: 2px solid #ccc;
+}
+
+#enrolledcourses #frontpage-course-list h2 {
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	color: #333;
+	font-size: 2.5em;
+	line-height: normal;
+	margin: 0;
+}
+
+#enrolledcourses p.tagline {
+	color: #333;
+	margin-top: 5px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.frontpage-course-list-enrolled .coursebox {
+	margin: 0;
+}
+
+.frontpage-course-list-enrolled .coursebox .content .info span.coursename {
+	font-size: 1.8em;
+	line-height: normal;
+	font-family: 'BebasNeueBold-Regular';
+	letter-spacing: 1px;
+}
+
+.frontpage-course-list-enrolled .coursebox .content .coursename a {
+	color: #fff;
+}
+
+table.wrapper tr td span.tst-wrap {
+	display: block;
+}
+
+.content-column {
+	float: left;
+	margin: 0;
+}
+
+
+/*.content-column{float:left; margin:0 15px 10px 0 !important;}*/
+
+.shadow-page-wrapper .coursebox {
+	clear: both;
+	float: none;
+}
+
+.course-section {
+	margin: 0 !important;
+}
+
+.frontpage-course-list-enrolled {
+	overflow: hidden;
+}
+
+.frontpage-course-list-enrolled .coursebox {
+	border: none;
+	margin: 0;
+	position: relative;
+	background-color: #333
+}
+
+.frontpage-course-list-enrolled .coursebox.even {
+	background-color: #333;
+}
+
+.frontpage-course-list-enrolled .coursebox:hover {
+	background-color: #666;
+}
+
+.frontpage-course-list-enrolled .coursebox.tst {
+	width: auto !important;
+}
+
+.color-1,
+.main-color-1 {
+	border-top: 4px solid #0482D2 !important;
+}
+
+.color-2,
+.main-color-2 {
+	border-top: 4px solid #ffd740 !important;
+}
+
+.color-3,
+.main-color-3 {
+	border-top: 4px solid #3c4e8e !important;
+}
+
+.color-4,
+.main-color-4 {
+	border-top: 4px solid #1595a0 !important;
+}
+
+.frontpage-course-list-enrolled .coursebox>.content .inner-con,
+.frontpage-course-list-enrolled .coursebox>.content .visitlink {
+	display: none;
+}
+
+
+/* Frontpage-Category-Combo CSS
+--------------------------------*/
+
+#frontpage-category-combo h2 {
+	color: #000;
+	font-size: 2.5em;
+	margin: 0;
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+
+#frontpage-category-combo .panel-image,
+#frontpage-category-combo .categoryimage,
+#frontpage-category-combo .categorydescription {
+	display: none;
+}
+
+#frontpage-category-combo .coursebox.collapsed>.content {
+	display: inherit;
+}
+
+#frontpage-category-combo .course_category_tree .category>.info {
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+}
+
+#frontpage-category-combo .courses .coursebox.collapsed {
+	border: none;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#frontpage-category-combo .courses .coursebox.even,
+#frontpage-category-combo .courses .coursebox:hover,
+#frontpage-category-combo .course_category_tree .courses>.paging.paging-morelink:hover {
+	background-color: transparent;
+}
+
+#frontpage-category-combo .coursename {
+	font-size: 15px;
+}
+
+#frontpage-category-combo .coursebox {
+	border: none;
+}
+
+#frontpage-category-combo h3.categoryname {
+	font-size: 16px;
+	color: #989898;
+	font-weight: normal;
+	box-shadow: none;
+	text-transform: capitalize;
+	line-height: normal;
+}
+
+#frontpage-category-combo h3.categoryname a {
+	color: #727272;
+}
+
+#frontpage-category-combo a {
+	color: #333;
+}
+
+#frontpage-category-combo .course_category_tree .category .numberofcourse {
+	float: right;
+}
+
+#frontpage-category-combo .course_category_tree .category>.info {
+	box-shadow: none;
+}
+
+#frontpage-category-combo h4.categoryname {
+	font-size: 14px;
+	color: #747474;
+	text-transform: capitalize;
+	background-image: none !important;
+	filter: none !important;
+	padding-left: 0px !important;
+	margin-left: 0;
+	font-weight: normal;
+}
+
+#frontpage-category-combo h4.categoryname a {
+	color: #747474 !important;
+	list-style: square;
+	background-image: url([[pix:theme|list]]);
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 10px;
+}
+
+#frontpage-category-combo .course_category_tree .category>.content {
+	padding-left: 10px;
+}
+
+#frontpage-category-combo .course_category_tree .collapsible-actions {
+	display: none !important;
+}
+
+
+/* Tutors CSS
+--------------------*/
+
+.tutors {
+	background-image: url([[setting:tutorsbg]]);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	border-top: 2px solid #ccc;
+	padding: 4em 0;
+}
+
+.tutors .row-fluid {
+	margin-top: 4em;
+}
+
+.tutors .span4 {
+	background-color: #eee;
+	border: 1px solid #eee;
+	padding: 10px;
+	margin: 10px !important;
+}
+
+.tutors .span4:hover {
+	cursor: pointer;
+	background-color: #f6f9fa;
+}
+
+.tutors-image {
+	position: relative;
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
+	width: 70px;
+	padding-right: 25px;
+	float: left;
+}
+
+.tutors-image img {
+	width: 100%;
+	-webkit-border-radius: 70px;
+	-moz-border-radius: 70px;
+	border-radius: 70px;
+}
+
+.tutors-info h5 {
+	font-family: "Times New Roman", Times, serif;
+	color: #333;
+	font-size: 1.5em;
+}
+
+.tutors-info h5 a {
+	color: #333;
+}
+
+.tutors-info h5 a:hover {
+	color: #0482D2;
+}
+
+
+/* Float Shadow */
+
+.hvr-float-shadow {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	position: relative;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+
+.hvr-float-shadow:before {
+	pointer-events: none;
+	position: absolute;
+	z-index: -1;
+	content: '';
+	top: 100%;
+	left: 5%;
+	height: 10px;
+	width: 90%;
+	opacity: 0;
+	background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+	background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform, opacity;
+	transition-property: transform, opacity;
+}
+
+.hvr-float-shadow,
+.hvr-float-shadow:focus,
+.hvr-float-shadow:active {
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px);
+}
+
+.hvr-float-shadow:before,
+.hvr-float-shadow:focus:before,
+.hvr-float-shadow:active:before {
+	opacity: 1;
+	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
+}
+
+.hvr-float-shadow:hover {
+	-webkit-transform: translateY(-0px);
+	transform: translateY(-0px);
+}
+
+
+/* Awesome-Start CSS
+------------------------*/
+
+.awesome-start {
+	background-color: #1595a0;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.awesome-start:after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	margin-left: -50px;
+	width: 0;
+	height: 0;
+	border-top: 50px solid #1595a0;
+	border-right: 50px solid transparent;
+	border-bottom: 0 solid transparent;
+	border-left: 50px solid transparent;
+}
+
+.awesome-start h1 {
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	color: #fff;
+	font-size: 2.5em;
+	font-weight: normal;
+	line-height: normal;
+}
+
+.awesome-start a.btn {
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 0;
+	background-image: none;
+	filter: none;
+	display: inline-block;
+	color: #fff;
+	text-shadow: none;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	letter-spacing: 2px;
+	margin: 10px;
+	font-weight: 600;
+	transition: 0.5s ease;
+	box-shadow: none;
+}
+
+.awesome-start a.btn:hover {
+	background-color: transparent;
+	border: 2px solid #ffaa30;
+	color: #ffaa30;
+}
+
+
+/* Newsletter CSS
+---------------------*/
+
+.newsletter {
+	padding: 4em 0;
+	border-top: 2px solid #ccc;
+}
+
+.newsletter .container-fluid {
+	text-align: center;
+	border: 1px solid #ebebeb;
+	padding: 58px 15px;
+	overflow: hidden;
+	background-image: url([[pix:theme|newsletterbackground]]);
+	background-position: -34px 76px;
+	background-repeat: no-repeat;
+}
+
+.newsletter .container-fluid h5 {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	color: #000;
+}
+
+.newsletter .container-fluid form {
+	max-width: 572px;
+	margin: 0 auto;
+	margin-top: 48px;
+	position: relative;
+}
+
+.newsletter .container-fluid .newsletter-field-email {
+	margin-bottom: 10px;
+	border: 0;
+	padding: 0;
+}
+
+.newsletter .container-fluid .newsletter-field-email label {
+	display: none;
+}
+
+.newsletter .container-fluid .newsletter-field-email input[type="email"] {
+	border: 1px solid #ebebeb;
+	background-color: #fff;
+	box-shadow: none;
+	border-radius: 0;
+	color: #000;
+	padding: 15px 10px;
+	padding-right: 0;
+	width: 98%;
+	margin-bottom: 0;
+	height: 100%;
+}
+
+.newsletter .container-fluid .newsletter-field-button {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 130px;
+	margin: 0;
+}
+
+.newsletter .container-fluid .newsletter-field-button input[type="submit"] {
+	background-color: #7fbf00;
+	background-image: none;
+	filter: none;
+	border: none;
+	border-radius: 0;
+	width: 100%;
+	text-shadow: none;
+	color: #fff;
+	text-transform: uppercase;
+	height: 100%;
+	margin: 0;
+	font-weight: bold;
+}
+
+.newsletter .container-fluid .newsletter-field-button input[type="submit"]:hover {
+	background-color: #6ca300;
+}
+
+
+/* Social CSS
+-------------------*/
+
+.social {
+	background-color: #3c4e8e;
+	padding: 2em 0;
+	text-align: center;
+	color: #fff;
+	margin-top: 2em;
+}
+
+.social a {
+	color: #fff;
+}
+
+.social ul {
+	margin: 0;
+	margin-top: 20px;
+}
+
+.social ul li {
+	display: inline-block;
+	padding: 0 10px;
+	list-style: none;
+	font-size: 20px;
+}
+
+
+/* Page-Footer CSS
+-----------------------*/
+
+#page-footer {
+	margin-top: 0;
+	background-color: #202020;
+	color: #fff;
+	border: none;
+}
+
+#page-footer a {
+	color: #ccc;
+}
+
+#page-footer ul {
+	margin: 0;
+}
+
+#page-footer ul li {
+	display: inline-block;
+	padding: 0 3px;
+	list-style: none;
+}
+
+#page-footer ul.copyright {
+	font-size: 13px;
+	color: #ccc;
+}
+
+#page-footer ul.copyright a {
+	color: #ccc;
+}
+
+#page-footer ul.copyright a:hover {
+	color: #eee;
+}
+
+
+/* Enrolled CSS
+-----------------------*/
+
+#page-enrol-users #filterform {
+	background-color: #eee;
+	border: 1px dashed #ccc;
+	border-radius: 0;
+}
+
+.userenrolment {
+	border: 1px solid #eee;
+}
+
+.userenrolment thead {
+	background-color: #eee;
+}
+
+.userenrolment thead th {
+	padding: 10px;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.userenrolment td {
+	padding: 10px;
+}
+
+#page-enrol-users .enrol_user_buttons {
+	float: none;
+}
+
+#page-enrol-users #filterform {
+	display: block;
+}
+
+
+/* Messages CSS
+------------------*/
+
+.messaging-area-container .messaging-area .contacts-area .searchtextarea {
+	background-color: #eee;
+}
+
+.messaging-area-container .messaging-area .contacts-area .searchtextarea input {
+	background-color: #fff;
+}
+
+.messaging-area-container .messaging-area {
+	border-radius: 0;
+}
+
+.messaging-area-container .messaging-area .contacts-area .tabs {
+	height: 60px;
+	bottom: 13px;
+	position: relative;
+}
+
+.messaging-area-container .messaging-area .contacts-area .tabs .tab {
+	background-color: #ccc;
+	border-top: 3px solid #ccc;
+}
+
+.messaging-area-container .messaging-area .contacts-area .tabs .tab.selected {
+	background-color: #eee;
+	border-top-color: #0482D2;
+	color: #111;
+}
+
+.messaging-area-container .messaging-area .contacts-area .tabs .tab:hover {
+	color: #111;
+}
+
+.messaging-area-container .messaging-area .contacts-area .contacts .contact:hover {
+	background-color: #ccc;
+}
+
+.messaging-area-container .messaging-area .contacts-area .contacts .contact .picture {
+	border-bottom: none;
+}
+
+
+/* Model CSS
+-------------------*/
+
+.modal,
+.moodle-dialogue-base .moodle-dialogue-wrap {
+	border-radius: 0;
+	border: 1px solid #ccc;
+	color: #111;
+	font-size: 13px;
+	margin-bottom: 20px !important;
+}
+
+#modal-header,
+.moodle-dialogue-hd {
+	color: #111;
+	font-size: 1.4em;
+	background-color: #eee;
+	border-bottom: 1px solid #ccc;
+}
+
+.moodle-dialogue-hd {
+	text-transform: uppercase;
+	text-align: left !important;
+	padding-left: 10px !important;
+	font-weight: bold !important;
+}
+
+.modal-footer {
+	border-radius: 0;
+}
+
+.modal-footer input {
+	margin-bottom: 0 !important;
+}
+
+.moodle-dialogue-base .closebutton {
+	background-image: none;
+	filter: none;
+	background-color: #ccc;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	width: 20px;
+	height: 20px;
+}
+
+.moodle-dialogue-base .closebutton:before {
+	content: "\f00d";
+	font-family: 'FontAwesome';
+}
+
+.popover-title h3 {
+	margin: 0;
+	line-height: normal;
+}
+
+
+/* Profile CSS
+------------------------*/
+
+.userprofile .profile_tree section {
+	border-radius: 0;
+	border: 1px solid #eee;
+}
+
+.userprofile .profile_tree section.node_category {
+	padding: 0;
+}
+
+.userprofile .profile_tree section.node_category h3 {
+	background-color: #eee;
+	color: #000;
+	padding: 20px;
+	margin: 0;
+	font-size: 16px;
+}
+
+.userprofile .profile_tree section.node_category ul {
+	padding: 15px;
+}
+
+
+/* Grader report CSS
+-----------------------------*/
+
+.path-grade-report .gradeparent table {
+	border-radius: 0;
+}
+
+.path-grade-report .gradeparent tr .cell {
+	background-color: #eee;
+}
+
+
+/* Login page CSS
+----------------------*/
+
+body#page-login-index {
+	background-color: #fff;
+	background-image: url([[setting:loginbackground]]);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 0;
+	margin: 0;
+	color: #0482D2;
+}
+
+body#page-login-index #page-content {
+	padding-top: 0;
+}
+
+.loginbox .guestsub,
+.loginbox .forgotsub,
+.loginbox .potentialidps {
+	margin: 5px 0;
+}
+
+#maincontent {
+	height: inherit;
+}
+
+body#page-login-index .loginpanel {
+	width: 30%;
+	margin: 0;
+	float: left;
+	background-color: transparent;
+	color: #0482D2;
+	font-size: 14px;
+	padding: 20px 30px;
+}
+
+body#page-login-index .loginpanel .loginpanel-inner {
+	vertical-align: middle;
+	display: table-cell;
+	text-align: center;
+	margin: 0 auto !important;
+}
+
+body#page-login-index .signuppanel {
+	width: 70%;
+	position: relative;
+	text-align: center;
+	margin-top: 10%;
+}
+
+body#page-login-index .loginbox .loginform .form-input {
+	width: 100%;
+	margin: 0 auto;
+}
+
+body#page-login-index .loginbox input[type="text"],
+body#page-login-index .loginbox input[type="password"] {
+	border-radius: 0;
+	box-shadow: none;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #0482D2;
+	width: 60%;
+	margin: 0 auto;
+	display: inherit;
+	margin-bottom: 0px;
+	font-size: 12px;
+	color: #333;
+	height: 30px;
+	padding-left: 0;
+}
+
+body#page-login-index .loginbox input[type="password"] {
+	margin-bottom: 10px;
+}
+
+body#page-login-index .loginbox .form-label label {
+	font-weight: normal;
+	margin-right: 5px;
+	display: none;
+}
+
+.loginbox .subcontent {
+	padding: 0;
+	color: #333;
+}
+
+.loginpanel h2 {
+	display: none;
+}
+
+.signuppanel h2 {
+	color: #0482D2;
+}
+
+body#page-login-index .loginbox input[type="submit"] {
+	background-color: transparent;
+	background-image: none;
+	filter: none;
+	box-shadow: none;
+	border: 2px solid #0482D2;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	color: #0482D2;
+	text-shadow: none;
+	margin-top: 10px;
+	text-transform: uppercase;
+	padding: 8px 30px;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+body#page-login-index .loginbox {
+	margin: 20% 0;
+	background-image: url([[pix:theme|tr]]);
+	background-repeat: repeat;
+	background-color: transparent;
+}
+
+body#page-login-index .loginbox.onecolumn .loginpanel {
+	margin: 0 auto;
+	float: none;
+}
+
+body#page-login-index .loginbox input[type="submit"]:hover {
+	background-color: transparent;
+	background-image: url([[pix:theme|tr]]);
+	background-repeat: repeat;
+	color: #0482D2;
+	border-color: #0482D2;
+}
+
+body#page-login-index .loginbox .loginpanel .desc {
+	margin: 0;
+}
+
+body#page-login-index .loginbox .guestsub,
+body#page-login-index .loginbox .forgotsub,
+body#page-login-index .loginbox .potentialidps {
+	margin-top: 10px;
+}
+
+body#page-login-index .forgetpass {
+	margin-bottom: 10px;
+}
+
+
+/* Dashboard CSS
+---------------------*/
+
+.block_myoverview h4 {
+	font-weight: bold;
+}
+
+.media-heading {
+	margin: 20px 0;
+}
+
+
+/*----------backtotop----------*/
+
+#backtotop {
+	cursor: pointer;
+	display: none;
+	position: relative;
+	text-align: right;
+	cursor: pointer;
+	z-index: 99999;
+}
+
+#backtotop a.scrollup {
+	background-color: #0482D2;
+	background-image: url([[pix:theme|back]]);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+
+#backtotop a.scrollup:hover {
+	background-color: #484848;
+}
+
+
+/* Calendar Page CSS
+-------------------------*/
+
+body#page-calendar-view section#region-main {
+	background-color: #eee;
+	padding: 20px;
+	color: #111;
+}
+
+body#page-calendar-view .maincalendar .controls {
+	background-color: #0482D2;
+	padding: 20px;
+	width: 96.5%;
+	margin: 0;
+}
+
+body#page-calendar-view .maincalendar .controls .arrow_link.previous,
+body#page-calendar-view .maincalendar .controls .arrow_link.next {
+	margin: 14px 0;
+	color: #fff;
+}
+
+body#page-calendar-view .maincalendar .controls span.arrow {
+	display: none;
+}
+
+body#page-calendar-view .maincalendar .controls .arrow_link.previous .arrow_text:before {
+	font-family: 'FontAwesome';
+	content: "\f0a8";
+	font-size: 16px;
+	color: #fff;
+	padding: 6px;
+}
+
+body#page-calendar-view .maincalendar .controls .arrow_link.next .arrow_text:after {
+	font-family: 'FontAwesome';
+	content: "\f0a9";
+	font-size: 16px;
+	color: #fff;
+	padding: 6px;
+}
+
+body#page-calendar-view .maincalendar .calendartable {
+	background-color: #fff;
+	margin: 0;
+	width: 100%;
+}
+
+body#page-calendar-view .maincalendar .calendartable th {
+	padding: 20px 10px;
+	background-color: #f8f8f8;
+}
+
+body#page-calendar-view .maincalendar .calendarmonth td {
+	vertical-align: middle;
+}
+
+body#page-calendar-view .maincalendar .calendar-controls .current {
+	font-size: 1.4em;
+	color: #fff;
+}
+
+body#page-calendar-view .maincalendar .calendartable td.today {
+	background-color: #dcdcdc;
+	color: #0482D2;
+}
+
+
+/* For Mobile
+----------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.logo-con {
+		float: none !important;
+		padding: 0 20px;
+		border-bottom: 1px solid #eee;
+	}
+	.navbar-inner .container-fluid {
+		padding: 0 !important;
+	}
+	.custom-menu {
+		float: none !important;
+		padding: 0 20px;
+	}
+	.block-section label.slideblocklabel {
+		top: 250px;
+	}
+	.navbar .btn-navbar {
+		margin: 28px 0 28px 20px;
+	}
+	.nav-collapse.collapse {
+		float: none !important;
+	}
+	.navbar .nav-collapse.in {
+		background-color: #f5f5f5;
+	}
+	.navbar .nav>li>a {
+		padding: 10px;
+		color: #333;
+		font-size: 13px;
+		font-weight: normal;
+	}
+	.nav-collapse .nav>li>a,
+	.nav-collapse .dropdown-menu a {
+		font-weight: normal;
+	}
+	.tutors .span4 {
+		width: 47% !important;
+	}
+	body#page-login-index .loginpanel,
+	body#page-login-index .signuppanel {
+		width: 100%;
+		float: none;
+		margin: 0;
+		padding: 20px 30px;
+	}
+	.navbar .popover-region-toggle {
+		display: none;
+	}
+	aside#block-region-side-pre,
+	aside#block-region-side-post,
+	section#region-main,
+    #region-main-box{
+		width: 100% !important;
+		float: none !important;
+        margin-left: 0 !important;
+	}
+	#stickyicons {
+		display: none;
+	}
+	#nav-main {
+		margin: 0;
+	}
+	.navbar-fixed-top .navbar-inner,
+	.navbar-fixed-bottom .navbar-inner {
+		padding: 0;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+	body {
+		padding: 0;
+	}
+	span.newsearch a.catalog {
+		width: 55px;
+		font-size: 12px;
+	}
+	.container-fluid {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.logo-con {
+		float: none !important;
+		padding: 0 20px;
+		border-bottom: 1px solid #eee;
+	}
+	.navbar-inner .container-fluid {
+		padding: 0 !important;
+	}
+	.custom-menu {
+		float: none !important;
+		padding: 0 20px;
+	}
+	.block-section label.slideblocklabel {
+		top: 250px;
+	}
+	.navbar .btn-navbar {
+		margin: 28px 0 28px 20px;
+	}
+	.nav-collapse.collapse {
+		float: none !important;
+	}
+	.navbar .nav-collapse.in {
+		background-color: #f5f5f5;
+	}
+	.navbar .nav>li>a {
+		padding: 10px;
+		color: #333;
+		font-size: 13px;
+		font-weight: normal;
+	}
+	.nav-collapse .nav>li>a,
+	.nav-collapse .dropdown-menu a {
+		font-weight: normal;
+	}
+	body#page-login-index .loginpanel,
+	body#page-login-index .signuppanel {
+		width: 100%;
+		float: none;
+		margin: 0;
+		padding: 20px 30px;
+	}
+	.navbar .popover-region-toggle {
+		display: none;
+	}
+	.navbar .popover-region .popover-region-container {
+		top: 262px;
+	}
+	#site-news-forum {
+		width: auto;
+	}
+	#page-site-index .subscribelink {
+		margin-bottom: 0;
+	}
+	#page-site-index .forumaddnew input[type="submit"],
+	#page-site-index .subscribelink a {
+		font-size: 10px;
+	}
+	.awesome-start h1 {
+		font-size: 2em;
+		line-height: normal;
+	}
+	form#searchbox_demo input[type="text"] {
+		width: 155px;
+	}
+	.tutors .span4 {
+		margin: 0 !important;
+		margin-bottom: 25px !important;
+	}
+	#stickyicons {
+		display: none;
+	}
+	#nav-main {
+		margin: 0;
+	}
+	.navbar-fixed-top .navbar-inner,
+	.navbar-fixed-bottom .navbar-inner {
+		padding: 0;
+	}
+    .top-header .container-fluid{
+        padding: 0;
+    }
+    .customsearch{
+       float: none !important;
+        text-align: center;
+    }
+    .customsearch span.newsearch{
+        margin: 10px auto;
+    }
+    .loginsection{
+        float: none !important;
+        clear: both;
+        margin-top: 10px;
+        border-top: 1px solid #ebebeb;
+    }
+    .loginsection .line{
+        float: right;
+        border-left:1px solid #ebebeb;
+        border-right: none;
+    }
+    .forumpost::before{
+        left: -19px;
+    }
+    .forumpost:nth-child(2n)::before{
+        right: -19px;
+    }
+    .newsletter .container-fluid .newsletter-field-email input[type="email"]{
+        width: 96%;
+    }
+}
+
+@media (max-width: 320px) {
+	.navbar img.small-logo {
+		max-width: 150px;
+	}
+	.navbar .small-logo-container+.brand {
+		position: absolute;
+		left: -10000px;
+		font-size: 1em;
+		font-weight: normal;
+	}
+	form#searchbox_demo input[type="text"] {
+		width: 155px;
+	}
+	.tutors .span4 {
+		margin: 0 !important;
+		margin-bottom: 25px !important;
+	}
+	#stickyicons {
+		display: none;
+	}
+	span.newsearch {
+		margin-bottom: 0;
+	}
+	.loginsection.pull-right {
+		margin-right: 2px;
+	}
+}
+
+
+/* Custom CSS Settings
+-------------------------*/
+
+[[setting:customcss]]
+/* Site Blue Color */
+
+#backtotop a.scrollup,
+.block .header,
+input.form-submit,
+input#id_submitbutton,
+input#id_submitbutton2,
+.path-admin .buttons input[type="submit"],
+td.submit input,
+.btn-primary,
+.moodle-actionmenu[data-enhanced].show .menu a:hover,
+#owl-demo .owl-item:nth-child(odd) .visitlink a,
+#enrolledcourses .courses .coursebox.odd .visitlink a,
+body#page-calendar-view .maincalendar .controls,
+.navbar .btn-navbar {
+	background-color: [[setting:sitebluecolor]];
+}
+
+.forumpost,
+input.form-submit,
+input#id_submitbutton,
+input#id_submitbutton2,
+.path-admin .buttons input[type="submit"],
+td.submit input,
+.btn-primary,
+body#page-login-index .loginbox input[type="text"],
+body#page-login-index .loginbox input[type="password"],
+body#page-login-index .loginbox input[type="submit"],
+body#page-login-index .loginbox input[type="submit"]:hover {
+	border-color: [[setting:sitebluecolor]];
+}
+
+.navbar .brand {
+	border-bottom-color: [[setting:sitebluecolor]];
+}
+
+a,
+.signuppanel h2,
+body#page-login-index .loginbox input[type="submit"],
+body#page-calendar-view .maincalendar .calendartable td.today,
+body#page-login-index .loginbox input[type="submit"]:hover,
+.forumpost:before,
+.navbar .brand,
+.jsenabled .usermenu .moodle-actionmenu.show .menu a:hover,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-submenu:hover>a,
+.dropdown-submenu:focus>a,
+.tutors-info h5 a:hover {
+	color: [[setting:sitebluecolor]];
+}
+
+.moodle-actionmenu[data-enhanced].show .menu,
+.color-1,
+.main-color-1,
+.messaging-area-container .messaging-area .contacts-area .tabs .tab.selected{
+	border-top-color: [[setting:sitebluecolor]] !important;
+}
+
+
+/* Site Yellow Color */
+
+.forumpost:nth-child(even),
+#owl-demo .owl-controls .owl-buttons div.owl-prev:hover,
+#owl-demo .owl-controls .owl-buttons div.owl-next:hover,
+.awesome-start a.btn:hover {
+	border-color: [[setting:siteyellowcolor]];
+}
+
+#owl-demo .owl-controls .owl-buttons div.owl-prev:hover,
+#owl-demo .owl-controls .owl-buttons div.owl-next:hover,
+.forumpost:nth-child(even):before,
+.awesome-start a.btn:hover {
+	color: [[setting:siteyellowcolor]];
+}
+
+
+/* Site Violet Color */
+
+body#page-course-index-category .categorypicker,
+body.pagelayout-coursecategory #coursesearch,
+.block_calendar_month caption,
+.social,
+body#page-admin-theme-index .well:first-child {
+	background-color: [[setting:sitevioletcolor]];
+}
+
+.color-3,
+.main-color-3 {
+	border-top-color: [[setting:sitevioletcolor]] !important;
+}
+
+/* For lower version */
+#page-content #site-news-forum{
+    display: none;
+}
+
